@@ -1,0 +1,255 @@
+/* COLORPICKER 1 EXAMPLE */
+#colorPicker
+{
+    width:          300px;
+    height:         300px;
+    position: relative;
+    clear: both;
+    margin: 40px auto 20px;
+    box-sizing : initial !important;
+}
+
+
+
+#colorPicker .track {
+    background:     #EFEFEF url(images/text-color.png) no-repeat 50% 50%;
+    height:         290px;
+    width:          290px;
+    padding:        6px;
+    position:       absolute;
+    cursor:         crosshair;
+    float:          left;
+    left:           0px;
+    top:            0px;
+    display:        none;
+    border:         1px solid #ccc;
+    z-index:        10;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+}
+
+#colorPicker .number {
+    position:       absolute;
+    width:          100px;
+    height:         100px;
+    top:            102px;
+    left:           102px;
+    z-index:        20;
+    margin:         0px;
+    pointer-events: none;
+    line-height: 100px;
+    text-align: center;
+    font-size: 34px;
+}
+
+#colorPicker .color {
+    width:          300px;
+    height:         300px;
+    padding:        1px;
+    border:         1px solid #ccc;
+    display:        block;
+    position:       relative;
+    z-index:        11;
+    background-color: #EFEFEF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#colorPicker .color.clicked {
+    width:          48px;
+    height:         48px;
+    top: 126px;
+    left: 126px;
+}
+
+#colorPicker .color.bAndW.clicked {
+    width:          100px;
+    height:         100px;
+    top: 100px;
+    left: 100px;
+}
+
+#colorPicker .colorInner {
+    width:          96%;
+    height:         96%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+#colorPicker .dropdown {
+    list-style: none;
+    display: none;
+    width: 27px;
+    position: absolute;
+    top: 28px;
+    border: 1px solid #ccc;
+    left: 0;
+    z-index: 1000;
+}
+
+#colorPicker .dropdown li{
+    height: 25px;
+    cursor: pointer;
+}
+
+/*
+
+
+                 /$$$$$$$   /$$$$$$  /$$$$$$$ 
+                | $$__  $$ /$$__  $$| $$__  $$
+                | $$  \ $$| $$  \__/| $$  \ $$
+                | $$$$$$$/| $$ /$$$$| $$$$$$$ 
+                | $$__  $$| $$|_  $$| $$__  $$
+                | $$  \ $$| $$  \ $$| $$  \ $$
+                | $$  | $$|  $$$$$$/| $$$$$$$/
+                |__/  |__/ \______/ |_______/ 
+                                                
+                                                              
+http://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=RGB
+
+*/
+
+#content.rgb{
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+#content.rgb .color{
+  width: 220px;
+  height: 270px;
+  float: left;
+}
+
+#content.rgb .chart {
+  position: relative;
+  margin-top: 16px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chartRed {
+  color:#FF0000;
+}
+
+.chartGreen {
+  color:#00FF00;
+}
+
+.chartBlue {
+  color:#0000FF;
+}
+
+#content.rgb .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content.rgb .chart .percent {
+  display: inline-block;
+  position: relative;
+  line-height: 200px;
+  font-size: 3em;
+  z-index: 1;
+}
+
+#content.rgb .chart .percent i {
+  margin-left: 0.1em;
+  font-size: .5em;
+}
+
+#content.rgb .range-field
+{
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content.rgb input[type=range]::-webkit-slider-runnable-track {
+  height: 24px;
+  background: #EEE;
+  }
+
+#content.rgb input[type=range]::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 10%;
+  margin: 0px 0 0 0;
+}
+
+#content.rgb .chartGreen input[type=range]::-webkit-slider-thumb{
+  background-color: #00FF00;
+}
+
+#content.rgb .chartBlue input[type=range]::-webkit-slider-thumb{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed input[type=range]::-webkit-slider-thumb{
+  background-color: #FF0000;
+}
+
+
+
+#content.rgb input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #EEE; }
+
+#content.rgb input[type=range]::-moz-range-track {
+  height: 24px;
+  background: #c2c0c2;
+}
+
+#content.rgb input[type=range]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 10%;
+  background: #ff6f00;
+  margin-top: 0px; }
+
+
+#content.rgb .chartGreen input[type=range]::-moz-range-thumb{
+  background-color: #00FF00;
+}
+
+#content.rgb .chartBlue input[type=range]::-moz-range-thumb{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed input[type=range]::-moz-range-thumb{
+  background-color: #FF0000;
+}
+
+#content.rgb input[type=range]:focus::-moz-range-track {
+  background: #c2c0c2; }
+
+#content.rgb .chartGreen .thumb
+{
+  background-color: #FF0000;
+}
+
+#content.rgb .chartBlue .thumb
+{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed .thumb
+{
+  background-color: #ff0000;
+}
+
+#content.rgb #chart
+{
+	width: 96%;
+	height: 200px;
+	margin: 2%;
+}*/

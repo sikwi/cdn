@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sikwi</title>
+    <link rel="stylesheet" href="../index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+  <body>
+  	<div id="hdr"><h1>Sikwi Eye</h1><a href="//sikwi.com/help/keypad"><i class="mdi-action-help"></i><u>Help</u></a></div>
+  	<div id="content" class="keypad">
+		<div class="input-field hidden">
+	      <input id="psw" type="tel" class="validate" placeholder="">	      
+	      <button class="waves-effect waves-light btn-large" onclick="sh()"><i class="mdi-"></i><u>show</u></button>
+	    </div>
+	    <script type="text/javascript">
+	    	var e = document.getElementById("psw");
+	    	var i = document.getElementsByClassName("input-field")[0];
+	    	var show = false;
+	    	function aCP(c){
+	    		e.value += c;
+	    	}
+
+	    	function rst(){
+	    		e.value = "";
+	    	}
+
+	    	function clickOpen(){
+	    		window.parent.postMessage("setUrl:/?c=pass&v="+e.value+";", "*");
+	    	}
+
+	    	function sh()
+	    	{
+	    		show = !show;
+	    		i.className = "input-field "+(show?"":"hidden");
+	    	}
+	    </script>
+		<table>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(1)">1</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(2)">2</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(3)">3</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large blue" onclick="clickOpen()"><i class="mdi-action-lock-open"></i><u>UnLock</u></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(4)">4</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(5)">5</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(6)">6</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large blue " href="#"><i class="mdi-action-lock"></i><u>Lock</u></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(7)">7</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(8)">8</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(9)">9</button>
+				</td>
+				<!--td>
+					<a href="#" class="waves-effect waves-light btn-large blue"></a>
+				</td-->
+			</tr>
+			<tr>
+				<td>
+					<button class="waves-effect waves-light btn-large spe" onclick="aCP('#')">#</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large" onclick="aCP(0)">0</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large spe" onclick="aCP('*')">*</button>
+				</td>
+				<td>
+					<button class="waves-effect waves-light btn-large cancel" onclick="rst()"><i class="mdi-navigation-cancel"></i><u>Cancel</u></button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script src="../functions.js"></script>
+	<script src="keyPad.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sikwi</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="relay.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+  <body>
+  	<div id="hdr">
+  		<h1>
+  			Sikwi Relay <i></i>
+  		</h1>
+  	</div>
+  	<div id="content" class="relay">
+		<div class="switch">
+			<label>
+			  <span>off</span>
+			  <input id="checkbox" type="checkbox">
+			  <span class="lever"></span>
+			  <span>on</span>
+			</label>
+		</div>
+		<canvas id="chart" style="display:none"></canvas>
+	</div>
+	<script src="../common_libs.js"></script>
+	<script src="../common_functions.js"></script>
+	<script src="relay.js"></script>
+
+	<script type="text/javascript">
+		var percent = document.querySelector('.percent span');
+		var range = document.querySelector('.range-field input');
+		function updateChart(){
+			percent.innerHTML = range.value;
+		}
+
+		function changeChart(){
+			percent.innerHTML = range.value;
+		}
+	</script>
+  </body>
+</html>

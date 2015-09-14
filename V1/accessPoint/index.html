@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sikwi</title>
+    <meta name=viewport content="width=device-width,user-scalable=0">
+    <style>
+      html, body {
+        width : 100%;
+        height: 100%;
+        font-family: sans-serif;
+        margin: 0;
+      }
+      body *{
+        -webkit-appearance: none;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      header{
+        height: 110px;
+        background-color: #2196f3;
+        color: #FFF;
+        line-height: 150px;
+        font-size: 30px;
+        text-align: center;
+      }
+      h1{
+        margin-top: 20px;
+      }
+      p{
+        margin: 10px 0px;
+        text-align: justify;
+      }
+      #content {
+        max-width: 300px;
+        margin: auto;
+        color : #999;
+      }
+      select, input{
+        border: 1px solid #ccc;
+        font-size: 16px;
+        color : #2196f3;
+        font-weight: 400;
+      }
+      select{
+        display: inline;
+        height: 40px;
+        padding: 5px;
+        width: 100%;
+        background: #F5F5F5;
+      }
+      input{
+        height: 25px;
+        width: 278px;
+        padding: 5px 10px;
+      }
+      #button{
+        width: 100%;
+        height: 70px;
+        background-color: #2196f3;
+        color: #FFF;
+        margin: 30px 0;
+      }
+      label{
+        margin: 20px 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    Lumi&egrave;re du salon
+    </header>
+    <div id=content>
+      <h1>Wi-Fi Settings</h1>
+      <p>Please select the SSID of the network you wish to connect to, enter the password and then submit.</p>
+      <form method=get action=setap>
+        <label>SSID: </label>
+          <select name=ssid>
+            <option>Marwifibus</option>
+            <option>Test</option>
+            <option>Coucou</option>
+          </select>
+        <label>Password: </label>
+          <input name=pass length=64>
+        <input id=button type=submit>
+      </form>
+    </div>
+  </body>
+</html>

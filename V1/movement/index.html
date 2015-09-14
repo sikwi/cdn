@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sikwi</title>
+    <link rel="stylesheet" href="../index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+  <body>
+  	<div id="hdr"><h1>Sikwi Eye</h1><a href="//sikwi.com/help/keypad"><i class="mdi-action-help"></i><u>Help</u></a></div>
+  	<div id="content" class="movement">
+  		<div class="pres off">
+  			<h5>Pr&eacute;sence</h5>
+  			<p>Non</p>
+  		</div>
+
+
+  		<canvas id="chart"></canvas>
+
+  		<div class="vals">
+	  		<div class="val">
+	  			<h5>Luminosity</h5>
+				<div class="lum pie" data-percent="88" data-min="0" data-max="100">
+					<span class="percent"><span>50</span><i>%</i></span>
+				</div>
+	  		</div>
+	  		<div class="val">
+	  			<h5>Temp&eacute;rature</h5>
+				<div class="temp pie" data-percent="60" data-min="-20" data-max="60">
+					<span class="percent"><span>50</span><i>&deg;</i></span>
+				</div>
+	  		</div>
+	  		<div class="val">
+	  			<h5>Humidit&eacute;</h5>
+				<div class="hum pie" data-percent="45" data-min="0" data-max="100">
+					<span class="percent"><span>50</span><i>%</i></span>
+				</div>
+	  		</div>
+	  	</div>
+	</div>
+	<script src="../functions.js"></script>
+	<script src="movement.js"></script>
+  </body>
+</html>

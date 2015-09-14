@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sikwi</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="rgb.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="inner-preloader">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	<div id="hdr">
+  		<h1>
+  			Sikwi Dimmer
+  		</h1>
+  	</div>
+  	<div id="content" class="rgb">
+  		<div id="colorPicker">
+        <p class="number">10%</p>
+        <a class="color bAndW"><div class="colorInner"></div></a>
+        <div class="track"></div>
+        <ul class="dropdown"><li></li></ul>
+        <input type="hidden" class="colorInput"/>
+      </div>
+    </div>
+    
+  	<script src="../common_libs.js"></script>
+  	<script src="../common_functions.js"></script>
+    <script src="rgb.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/*
+
+	 /$$   /$$                                               /$$
+	| $$  /$$/                                              | $$
+	| $$ /$$/   /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$$
+	| $$$$$/   /$$__  $$| $$  | $$ /$$__  $$ |____  $$ /$$__  $$
+	| $$  $$  | $$$$$$$$| $$  | $$| $$  \ $$  /$$$$$$$| $$  | $$
+	| $$\  $$ | $$_____/| $$  | $$| $$  | $$ /$$__  $$| $$  | $$
+	| $$ \  $$|  $$$$$$$|  $$$$$$$| $$$$$$$/|  $$$$$$$|  $$$$$$$
+	|__/  \__/ \_______/ \____  $$| $$____/  \_______/ \_______/
+	                     /$$  | $$| $$                          
+	                    |  $$$$$$/| $$                          
+	                     \______/ |__/                          
+
+http://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=Keypad
+
+*/
+
+#content.keypad
+{
+	min-width: 300px;
+	max-width: 400px;
+}
+
+#content.keypad .input-field input
+{
+	margin-left: 2%;
+	font-size: 30px;
+	width: 80%;
+}
+
+#content.keypad .input-field button i::before
+{
+	content: "\e69b";
+}
+
+#content.keypad .input-field.hidden button i::before
+{
+	content: "\e69a";
+}
+
+#content.keypad .input-field.hidden input
+{
+	-webkit-text-security: disc;
+}
+
+#content.keypad .input-field button
+{
+	float: right;
+	margin-right: 2%;
+	width: 15% !important;
+	padding: 0px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #EEE;
+	color: #555;
+	border: 0px;
+}
+
+#content.keypad table{
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+#content.keypad table td{
+	padding: 5px 5px;
+}
+
+#content.keypad button.spe{
+	background-color: #AAA;
+}
+
+#content.keypad button{
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+}
+
+
+#content.keypad button.blue{
+	width: 100%;
+}
+
+#content.keypad button.cancel{
+	background-color: #EEE;
+	color: #555;
+	width: 100%;
+}
+
+#content.keypad button u{
+	display: none;
+}

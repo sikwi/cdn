@@ -1,0 +1,154 @@
+/*
+
+ /$$$$$$$  /$$                                                
+| $$__  $$|__/                                                
+| $$  \ $$ /$$ /$$$$$$/$$$$  /$$$$$$/$$$$   /$$$$$$   /$$$$$$ 
+| $$  | $$| $$| $$_  $$_  $$| $$_  $$_  $$ /$$__  $$ /$$__  $$
+| $$  | $$| $$| $$ \ $$ \ $$| $$ \ $$ \ $$| $$$$$$$$| $$  \__/
+| $$  | $$| $$| $$ | $$ | $$| $$ | $$ | $$| $$_____/| $$      
+| $$$$$$$/| $$| $$ | $$ | $$| $$ | $$ | $$|  $$$$$$$| $$      
+|_______/ |__/|__/ |__/ |__/|__/ |__/ |__/ \_______/|__/    
+                                                
+                                                              
+http://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=Dimmer
+
+*/
+
+#content.default{
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+#content.rgb .color{
+  width: 220px;
+  height: 270px;
+  float: left;
+}
+
+#content.rgb .chart {
+  position: relative;
+  margin-top: 16px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chartRed {
+  color:#FF0000;
+}
+
+.chartGreen {
+  color:#00FF00;
+}
+
+.chartBlue {
+  color:#0000FF;
+}
+
+#content.rgb .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content.rgb .chart .percent {
+  display: inline-block;
+  position: relative;
+  line-height: 200px;
+  font-size: 3em;
+  z-index: 1;
+}
+
+#content.rgb .chart .percent i {
+  margin-left: 0.1em;
+  font-size: .5em;
+}
+
+#content.rgb .range-field
+{
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content.rgb input[type=range]::-webkit-slider-runnable-track {
+  height: 24px;
+  background: #EEE;
+  }
+
+#content.rgb input[type=range]::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 10%;
+  margin: 0px 0 0 0;
+}
+
+#content.rgb .chartGreen input[type=range]::-webkit-slider-thumb{
+  background-color: #00FF00;
+}
+
+#content.rgb .chartBlue input[type=range]::-webkit-slider-thumb{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed input[type=range]::-webkit-slider-thumb{
+  background-color: #FF0000;
+}
+
+
+
+#content.rgb input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #EEE; }
+
+#content.rgb input[type=range]::-moz-range-track {
+  height: 24px;
+  background: #c2c0c2;
+}
+
+#content.rgb input[type=range]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 10%;
+  background: #ff6f00;
+  margin-top: 0px; }
+
+
+#content.rgb .chartGreen input[type=range]::-moz-range-thumb{
+  background-color: #00FF00;
+}
+
+#content.rgb .chartBlue input[type=range]::-moz-range-thumb{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed input[type=range]::-moz-range-thumb{
+  background-color: #FF0000;
+}
+
+#content.rgb input[type=range]:focus::-moz-range-track {
+  background: #c2c0c2; }
+
+#content.rgb .chartGreen .thumb
+{
+  background-color: #FF0000;
+}
+
+#content.rgb .chartBlue .thumb
+{
+  background-color: #0000FF;
+}
+
+#content.rgb .chartRed .thumb
+{
+  background-color: #ff0000;
+}
+
+#content.rgb #chart
+{
+	width: 96%;
+	height: 200px;
+	margin: 2%;
+}*/

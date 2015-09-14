@@ -1,0 +1,70 @@
+/*
+
+			 /$$$$$$$            /$$                    
+			| $$__  $$          | $$                    
+			| $$  \ $$  /$$$$$$ | $$  /$$$$$$  /$$   /$$
+			| $$$$$$$/ /$$__  $$| $$ |____  $$| $$  | $$
+			| $$__  $$| $$$$$$$$| $$  /$$$$$$$| $$  | $$
+			| $$  \ $$| $$_____/| $$ /$$__  $$| $$  | $$
+			| $$  | $$|  $$$$$$$| $$|  $$$$$$$|  $$$$$$$
+			|__/  |__/ \_______/|__/ \_______/ \____  $$
+			                                   /$$  | $$
+			                                  |  $$$$$$/
+			                                   \______/ 
+
+http://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=Relay
+*/
+
+#content.relay
+{
+}
+
+#content.relay .switch {
+  font-weight: 300px;
+  width: 330px;
+  margin: 80px auto;
+  height: 100px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+#content.relay .switch label
+{
+	font-size: 3em;
+}
+
+#content.relay .switch label .lever {
+  background-color: #CCC;
+}
+
+#content.relay .switch label input[type=checkbox]:checked+.lever {
+  background-color: #ffe082;
+}
+
+#content.relay .switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #ff6f00;
+  left: 80px;
+}
+
+.switch label .lever {
+  width: 132px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 33px;
+  margin: 0 30px;
+}
+
+.switch label .lever:after {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  left: -16px;
+  top: -10px;
+}
+
+#content.relay #chart
+{
+	width: 96%;
+	height: 200px;
+	margin: 2%;
+}
